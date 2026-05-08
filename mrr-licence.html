@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Resell Rights Licence Agreement — GetPaidToBeYouOnline</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C96A;
+    --gold-dim: rgba(201,168,76,0.1);
+    --black: #0D0D0D;
+    --dark: #1A1A1A;
+    --text: #1C1C1C;
+    --muted: #777;
+    --cream: #FAF8F3;
+    --cream2: #F4F1EA;
+    --red: #B83232;
+    --red-bg: #FFF5F5;
+    --border: rgba(201,168,76,0.25);
+    --border-soft: #E8E3D8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+    /* iframe-friendly: no overflow issues */
+    min-height: 100%;
+  }
+
+  /* ── DOCUMENT WRAPPER ── */
+  .doc {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(0,0,0,0.08);
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: var(--black);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .doc-header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+  }
+  .header-gold-bar {
+    background: var(--gold);
+    height: 5px;
+  }
+  .header-inner {
+    padding: 36px 48px 32px;
+  }
+  .header-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .header-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+  .header-title span { color: var(--gold); }
+  .header-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+
+  /* Meta grid */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .meta-item {
+    background: rgba(255,255,255,0.04);
+    padding: 12px 16px;
+  }
+  .meta-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 3px;
+  }
+  .meta-val {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+  }
+  .meta-val.gold { color: var(--gold); }
+
+  /* ── WARNING BANNER ── */
+  .warning-banner {
+    background: var(--red-bg);
+    border-left: 4px solid var(--red);
+    padding: 14px 20px 14px 48px;
+    margin: 0;
+    position: relative;
+    font-size: 13px;
+    color: var(--red);
+    line-height: 1.55;
+  }
+  .warning-banner::before {
+    content: '!';
+    position: absolute;
+    left: 16px; top: 50%;
+    transform: translateY(-50%);
+    width: 22px; height: 22px;
+    background: var(--red);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    line-height: 22px;
+    text-align: center;
+  }
+  .warning-banner strong { font-weight: 600; }
+
+  /* ── TOC ── */
+  .toc-wrap {
+    background: var(--cream);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 24px 48px;
+  }
+  .toc-title {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 24px;
+  }
+  .toc-item {
+    font-size: 12px;
+    color: var(--dark);
+    padding: 3px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: color 0.2s;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+  }
+  .toc-item:hover { color: var(--gold); }
+  .toc-num {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 11px;
+    min-width: 16px;
+  }
+
+  /* ── BODY ── */
+  .doc-body {
+    padding: 0 48px 48px;
+  }
+
+  /* Section */
+  .section {
+    margin-top: 36px;
+    scroll-margin-top: 20px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid var(--gold);
+  }
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    min-width: 32px;
+    line-height: 1;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
+  }
+
+  p { margin-bottom: 10px; font-size: 13.5px; line-height: 1.72; color: #2A2A2A; }
+
+  /* Definition table */
+  .def-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  .def-table tr { border-bottom: 1px solid var(--border-soft); }
+  .def-table tr:last-child { border-bottom: none; }
+  .def-table td { padding: 9px 12px; font-size: 13px; vertical-align: top; }
+  .def-table td:first-child {
+    font-weight: 600;
+    color: var(--dark);
+    white-space: nowrap;
+    min-width: 120px;
+    background: var(--cream);
+    border-right: 2px solid var(--gold-dim);
+  }
+  .def-table td:last-child { color: #333; line-height: 1.65; }
+
+  /* Bullet list */
+  .clause-list { list-style: none; padding: 0; margin: 10px 0; }
+  .clause-list li {
+    display: flex;
+    gap: 10px;
+    padding: 7px 0;
+    font-size: 13.5px;
+    color: #2A2A2A;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    line-height: 1.65;
+  }
+  .clause-list li:last-child { border-bottom: none; }
+  .clause-list li::before {
+    content: '✦';
+    color: var(--gold);
+    font-size: 10px;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* Restriction cards */
+  .restriction-card {
+    background: var(--red-bg);
+    border: 1px solid rgba(184,50,50,0.15);
+    border-left: 3px solid var(--red);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .restriction-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .restriction-title::before { content: '✗'; font-size: 13px; }
+  .restriction-desc {
+    font-size: 12.5px;
+    color: #5A2020;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Highlight box */
+  .highlight-box {
+    background: linear-gradient(135deg, #FFF8EC 0%, #FFF5E0 100%);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--dark);
+  }
+  .highlight-box strong { color: var(--black); }
+
+  /* Enforcement box */
+  .enforce-box {
+    background: #1A1A1A;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 14px 0;
+  }
+  .enforce-box-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .enforce-box p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  /* Contact table */
+  .contact-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  .contact-table tr { border-bottom: 1px solid var(--border-soft); }
+  .contact-table td { padding: 8px 12px; font-size: 13px; }
+  .contact-table td:first-child {
+    font-weight: 600;
+    color: var(--muted);
+    min-width: 100px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .contact-table a { color: var(--gold); text-decoration: none; }
+
+  /* ── SIGNATURE / FOOTER ── */
+  .sig-section {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1.5px solid var(--gold);
+  }
+  .sig-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .sig-sub {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+  .sig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .sig-box {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+  }
+  .sig-box-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .sig-box-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+  }
+  .sig-box-detail {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .sig-line {
+    height: 1px;
+    background: var(--border);
+    margin: 12px 0;
+  }
+
+  /* ── DOC FOOTER ── */
+  .doc-footer {
+    background: var(--black);
+    padding: 16px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .doc-footer-brand {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+  .doc-footer-meta {
+    font-size: 10.5px;
+    color: rgba(255,255,255,0.3);
+    text-align: right;
+  }
+
+  /* ── PRINT / iframe friendly ── */
+  @media print {
+    body { background: white; }
+    .doc { box-shadow: none; }
+  }
+
+  /* Responsive for narrow iframes */
+  @media (max-width: 600px) {
+    .header-inner { padding: 24px 24px 20px; }
+    .header-title { font-size: 26px; }
+    .meta-grid { grid-template-columns: 1fr 1fr; }
+    .toc-wrap { padding: 20px 24px; }
+    .toc-grid { grid-template-columns: 1fr; }
+    .doc-body { padding: 0 24px 36px; }
+    .sig-grid { grid-template-columns: 1fr; }
+    .doc-footer { flex-direction: column; text-align: center; padding: 14px 24px; }
+    .doc-footer-meta { text-align: center; }
+    .def-table td:first-child { min-width: 90px; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <!-- HEADER -->
+  <div class="doc-header">
+    <div class="header-gold-bar"></div>
+    <div class="header-inner">
+      <div class="header-label">GetPaidToBeYouOnline · Official Legal Document</div>
+      <div class="header-title">Master Resell Rights<br><span>Licence Agreement</span></div>
+      <div class="header-sub">1000 Mini Web Apps That Print Money</div>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="meta-label">Document Type</div>
+          <div class="meta-val">MRR Licence</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Version</div>
+          <div class="meta-val">1.0 — 2026</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Jurisdiction</div>
+          <div class="meta-val gold">Canada</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WARNING -->
+  <div class="warning-banner">
+    <strong>Read Before Selling:</strong> By purchasing this product you agree to all terms below. Violations — including giving apps away for free or reselling the entire bundle — will result in immediate revocation of course access.
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc-wrap">
+    <div class="toc-title">Contents</div>
+    <div class="toc-grid">
+      <a href="#s1" class="toc-item"><span class="toc-num">1</span> Definitions</a>
+      <a href="#s2" class="toc-item"><span class="toc-num">2</span> Grant of Rights</a>
+      <a href="#s3" class="toc-item"><span class="toc-num">3</span> Restrictions</a>
+      <a href="#s4" class="toc-item"><span class="toc-num">4</span> Enforcement</a>
+      <a href="#s5" class="toc-item"><span class="toc-num">5</span> End Buyer Rights</a>
+      <a href="#s6" class="toc-item"><span class="toc-num">6</span> Intellectual Property</a>
+      <a href="#s7" class="toc-item"><span class="toc-num">7</span> Product Updates</a>
+      <a href="#s8" class="toc-item"><span class="toc-num">8</span> Income Disclaimer</a>
+      <a href="#s9" class="toc-item"><span class="toc-num">9</span> Governing Law</a>
+      <a href="#s10" class="toc-item"><span class="toc-num">10</span> Contact</a>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="doc-body">
+
+    <!-- SECTION 1 -->
+    <div class="section" id="s1">
+      <div class="section-header">
+        <div class="section-num">1</div>
+        <div class="section-title">Definitions</div>
+      </div>
+      <p>The following terms apply throughout this Licence Agreement:</p>
+      <table class="def-table">
+        <tr><td>Licensor</td><td>Bansari Panchal, operating as GetPaidToBeYouOnline (getpaidtobeyou.online).</td></tr>
+        <tr><td>Licensee</td><td>The individual who has purchased authorised access to the 1000 Mini Web Apps That Print Money product through an official Licensor sales channel.</td></tr>
+        <tr><td>Product</td><td>1000 Mini Web Apps That Print Money — a collection of up to 1000 single-file HTML interactive web applications organised across 20 categories, delivered via the Licensor's course platform.</td></tr>
+        <tr><td>App</td><td>Any individual HTML web application file included within the Product.</td></tr>
+        <tr><td>MRR</td><td>Master Resell Rights — the right granted to the Licensee to resell individual Apps and, where permitted, to pass on resell rights to their own buyers under the same terms set out in this Licence.</td></tr>
+        <tr><td>End Buyer</td><td>A customer who purchases an individual App directly from the Licensee.</td></tr>
+        <tr><td>Course Access</td><td>The Licensee's login credentials and access to the Licensor's course platform where the Product vault is hosted.</td></tr>
+      </table>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section" id="s2">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <div class="section-title">Grant of Rights — What You Can Do</div>
+      </div>
+      <p>Subject to the terms of this Licence, the Licensor grants the Licensee a non-exclusive, worldwide licence to:</p>
+      <ul class="clause-list">
+        <li>Access and use all Apps in the Product for personal and commercial purposes.</li>
+        <li>Resell individual Apps to End Buyers at a price of the Licensee's choosing.</li>
+        <li>Pass Master Resell Rights to End Buyers, allowing them to also resell individual Apps under the same restrictions in this Licence.</li>
+        <li>Upload individual Apps to any digital product platform including Beacons, Stan Store, Etsy, Shopify, Gumroad, and the Licensee's own website.</li>
+        <li>Customise the branding, naming, or appearance of individual Apps before resale, provided the footer credit to GetPaidToBeYouOnline is maintained.</li>
+        <li>Earn and retain 100% of all revenue generated from the resale of individual Apps.</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section" id="s3">
+      <div class="section-header">
+        <div class="section-num">3</div>
+        <div class="section-title">Restrictions — What You Cannot Do</div>
+      </div>
+      <p>The following actions are strictly prohibited and constitute a material breach of this Licence:</p>
+
+      <div class="restriction-card">
+        <div class="restriction-title">Give Away For Free</div>
+        <p class="restriction-desc">You may not give, distribute, or make available any App or the entire Product at zero cost — including as a free bonus, free download, opt-in incentive, or giveaway — without express written permission from the Licensor.</p>
+      </div>
+
+      <div class="restriction-card">
+        <div class="restriction-title">Resell the Entire Bundle</div>
+        <p class="restriction-desc">You may not resell, repackage, or redistribute the entire collection of Apps as a single bundle, vault, or compilation product. Only individual Apps may be sold. Selling more than 10 Apps together in a single transaction is also prohibited without written permission.</p>
+      </div>
+
+      <div class="restriction-card">
+        <div class="restriction-title">Unauthorised Distribution</div>
+        <p class="restriction-desc">You may not share, publish, upload, email, or otherwise distribute course login credentials, the vault URL, or any App files to individuals who have not purchased authorised access.</p>
+      </div>
+
+      <div class="restriction-card">
+        <div class="restriction-title">Claim Authorship</div>
+        <p class="restriction-desc">You may not represent yourself as the original creator or developer of the Apps. You may rebrand and resell individual Apps but may not claim copyright ownership of the underlying code or functionality.</p>
+      </div>
+
+      <div class="restriction-card">
+        <div class="restriction-title">Create a Competing Product</div>
+        <p class="restriction-desc">You may not use the Product to create a competing product that is substantially similar to 1000 Mini Web Apps That Print Money and sell it under any name.</p>
+      </div>
+
+      <div class="restriction-card">
+        <div class="restriction-title">Transfer This Licence</div>
+        <p class="restriction-desc">This Licence is granted to the purchasing individual only and may not be sold, transferred, or assigned to any third party.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section" id="s4">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <div class="section-title">Enforcement and Consequences of Breach</div>
+      </div>
+      <p>Any violation of Section 3 will result in one or more of the following at the sole discretion of the Licensor:</p>
+      <ul class="clause-list">
+        <li>Immediate and permanent revocation of course access without refund.</li>
+        <li>Removal of access to the Product vault, course materials, and all future updates.</li>
+        <li>Written notice of breach sent to the Licensee's registered email address.</li>
+        <li>Reporting of the violation to the relevant platform (Beacons, Etsy, Gumroad, etc.) which may result in account suspension.</li>
+        <li>Legal action in accordance with applicable intellectual property and contract law in Canada.</li>
+      </ul>
+      <div class="enforce-box">
+        <div class="enforce-box-title">Zero Tolerance Policy</div>
+        <p>The Licensor operates a zero tolerance policy for violations relating to giving apps away for free and reselling the entire bundle. These violations are treated as serious breaches and will result in immediate course access revocation without exception or appeal.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section" id="s5">
+      <div class="section-header">
+        <div class="section-num">5</div>
+        <div class="section-title">Rights Passed to End Buyers</div>
+      </div>
+      <p>When the Licensee resells an individual App to an End Buyer, the End Buyer receives the following rights under the same MRR terms:</p>
+      <ul class="clause-list">
+        <li>The right to use the App personally and commercially.</li>
+        <li>The right to resell the individual App and keep 100% of the sale price.</li>
+        <li>The right to pass on resell rights to their own buyers.</li>
+      </ul>
+      <div class="highlight-box">
+        <strong>Licensee's Responsibility:</strong> End Buyers are bound by the same restrictions set out in Section 3. The Licensee is responsible for ensuring that End Buyers are made aware of these restrictions at the time of purchase. Including a copy of this Licence Agreement with each App sale is strongly recommended.
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="section" id="s6">
+      <div class="section-header">
+        <div class="section-num">6</div>
+        <div class="section-title">Intellectual Property</div>
+      </div>
+      <p>All Apps within the Product were created by or under the direction of the Licensor. The Licensor retains full copyright ownership of the underlying code, design, and functionality of all Apps. The Licence granted in Section 2 is a commercial use licence only and does not constitute a transfer of copyright or intellectual property ownership to the Licensee.</p>
+      <p>The Licensee may rebrand individual Apps — including renaming, recolouring, or modifying the design — provided that the footer credit <strong>"Powered by GetPaidToBeYouOnline"</strong> is maintained in the HTML file. Removing or altering this footer credit without written permission constitutes a breach of this Licence.</p>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="section" id="s7">
+      <div class="section-header">
+        <div class="section-num">7</div>
+        <div class="section-title">Product Updates and New Apps</div>
+      </div>
+      <p>The Licensor intends to add new Apps to the Product vault over time, increasing the total toward 1000 Apps. Licensees who purchase at any price tier receive all future Apps added to the vault at no additional cost, subject to continued compliance with this Licence Agreement.</p>
+      <div class="highlight-box">
+        The Licensor makes no legally binding guarantee as to the specific timeline or total number of Apps that will be delivered. New Apps are added progressively and unlock automatically in the Licensee's vault.
+      </div>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="section" id="s8">
+      <div class="section-header">
+        <div class="section-num">8</div>
+        <div class="section-title">Income Disclaimer and Limitation of Liability</div>
+      </div>
+      <p>The Licensor makes no guarantee of income, revenue, or profit from the resale of Apps. Results depend entirely on the Licensee's own marketing efforts, audience, pricing strategy, and business decisions. Individual results will vary.</p>
+      <p>To the maximum extent permitted by applicable law, the Licensor's total liability to the Licensee for any claim arising from this Licence shall not exceed the amount paid by the Licensee for the Product.</p>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="section" id="s9">
+      <div class="section-header">
+        <div class="section-num">9</div>
+        <div class="section-title">Governing Law</div>
+      </div>
+      <p>This Licence Agreement is governed by and construed in accordance with the laws of <strong>Canada</strong>. Any disputes arising from this Licence shall be subject to the jurisdiction of the courts of Canada.</p>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div class="section" id="s10">
+      <div class="section-header">
+        <div class="section-num">10</div>
+        <div class="section-title">Contact and Support</div>
+      </div>
+      <p>For questions about this Licence, to request written permission for any activity not covered under Section 2, or to report a suspected violation:</p>
+      <table class="contact-table">
+        <tr><td>Name</td><td>Bansari Panchal</td></tr>
+        <tr><td>Brand</td><td>GetPaidToBeYouOnline</td></tr>
+        <tr><td>Website</td><td><a href="https://getpaidtobeyou.online" target="_blank">getpaidtobeyou.online</a></td></tr>
+        <tr><td>Email</td><td><a href="mailto:bansari@getpaidtobeyou.online">bansari@getpaidtobeyou.online</a></td></tr>
+        <tr><td>Instagram</td><td><a href="https://instagram.com/girlbossgrowth" target="_blank">@girlbossgrowth</a></td></tr>
+      </table>
+    </div>
+
+    <!-- SIGNATURE -->
+    <div class="sig-section">
+      <div class="sig-title">Acknowledgement of Terms</div>
+      <div class="sig-sub">By purchasing and accessing 1000 Mini Web Apps That Print Money you confirm that you have read, understood, and agree to be bound by all terms of this Master Resell Rights Licence Agreement.</div>
+      <div class="sig-grid">
+        <div class="sig-box">
+          <div class="sig-box-label">Licensor</div>
+          <div class="sig-line"></div>
+          <div class="sig-box-name">Bansari Panchal</div>
+          <div class="sig-box-detail">GetPaidToBeYouOnline<br>getpaidtobeyou.online<br>Canada · 2026</div>
+        </div>
+        <div class="sig-box">
+          <div class="sig-box-label">Licensee</div>
+          <div class="sig-line"></div>
+          <div class="sig-box-name">You — The Buyer</div>
+          <div class="sig-box-detail">Purchase confirms full acceptance<br>of all terms in this agreement<br>Canada · 2026</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /doc-body -->
+
+  <!-- DOC FOOTER -->
+  <div class="doc-footer">
+    <div class="doc-footer-brand">GetPaidToBeYouOnline</div>
+    <div class="doc-footer-meta">MRR Licence Agreement v1.0 · Canada · 2026<br>Retain this document for your records</div>
+  </div>
+
+</div><!-- /doc -->
+</body>
+</html>
