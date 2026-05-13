@@ -411,7 +411,7 @@
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="Search 1000 apps..." oninput="filterApps()" autocomplete="off">
   </div>
-  <div class="topbar-count"><span id="visibleCount">100</span> apps available</div>
+  <div class="topbar-count"><span id="visibleCount">150</span> apps available</div>
 </div>
 
 <!-- HERO -->
@@ -442,6 +442,7 @@
     <div class="pill active" onclick="filterCat('all', this)">✦ All Apps</div>
     <div class="pill" onclick="filterCat('Business & Entrepreneurship', this)">💼 Business</div>
     <div class="pill" onclick="filterCat('Digital Products & Passive Income', this)">📦 Digital Products</div>
+    <div class="pill" onclick="filterCat('Productivity', this)">⚡ Productivity</div>
     <div class="pill" onclick="filterCat('coming', this)">🔜 Coming Soon</div>
   </div>
 </div>
@@ -574,12 +575,68 @@ const CATEGORIES = [
       { name: 'Affiliate Programme Planner', url: 'affiliate-programme-planner.html', icon: '🤝' },
       { name: 'Digital Product Empire Roadmap', url: 'digital-product-empire-roadmap.html', icon: '🏛️' },
     ]
+  },
+  {
+    id: 'Productivity',
+    icon: '⚡',
+    desc: '50 tools for focus, time management, habits and deep work',
+    apps: [
+      { name: 'Daily Task Prioritiser', url: 'daily-task-prioritiser.html', icon: '📋' },
+      { name: 'Focus Session Timer', url: 'focus-session-timer.html', icon: '⏱️' },
+      { name: 'Weekly Goal Tracker', url: 'weekly-goal-tracker.html', icon: '🎯' },
+      { name: 'Morning Routine Builder', url: 'morning-routine-builder.html', icon: '☀️' },
+      { name: 'Evening Wind Down Planner', url: 'evening-wind-down-planner.html', icon: '🌙' },
+      { name: 'Deep Work Session Tracker', url: 'deep-work-session-tracker.html', icon: '🧠' },
+      { name: 'Distraction Log Tool', url: 'distraction-log-tool.html', icon: '🚫' },
+      { name: 'Energy Level Tracker', url: 'energy-level-tracker.html', icon: '⚡' },
+      { name: 'Daily Intention Setter', url: 'daily-intention-setter.html', icon: '🌅' },
+      { name: 'Time Block Planner', url: 'time-block-planner.html', icon: '🗓️' },
+      { name: 'Habit Streak Counter', url: 'habit-streak-counter.html', icon: '🔥' },
+      { name: 'Weekly Review Generator', url: 'weekly-review-generator.html', icon: '📊' },
+      { name: 'Monthly Progress Tracker', url: 'monthly-progress-tracker.html', icon: '📈' },
+      { name: 'Project Milestone Tracker', url: 'project-milestone-tracker.html', icon: '🏁' },
+      { name: 'Daily Wins Journal', url: 'daily-wins-journal.html', icon: '✨' },
+      { name: 'Brain Dump Tool', url: 'brain-dump-tool.html', icon: '💭' },
+      { name: 'Decision Making Matrix', url: 'decision-making-matrix.html', icon: '⚖️' },
+      { name: 'Priority Score Calculator', url: 'priority-score-calculator.html', icon: '🏅' },
+      { name: 'Task Batch Organiser', url: 'task-batch-organiser.html', icon: '📦' },
+      { name: 'Deadline Countdown Timer', url: 'deadline-countdown-timer.html', icon: '⏰' },
+      { name: 'Meeting Prep Checklist', url: 'meeting-prep-checklist.html', icon: '📋' },
+      { name: 'End Of Day Review Tool', url: 'end-of-day-review-tool.html', icon: '🌆' },
+      { name: 'Weekly Planning Dashboard', url: 'weekly-planning-dashboard.html', icon: '📅' },
+      { name: 'Quarterly Goal Setter', url: 'quarterly-goal-setter.html', icon: '📆' },
+      { name: 'Annual Review Generator', url: 'annual-review-generator.html', icon: '🗂️' },
+      { name: 'Procrastination Buster Tool', url: 'procrastination-buster-tool.html', icon: '🚀' },
+      { name: 'Focus Music Selector', url: 'focus-music-selector.html', icon: '🎵' },
+      { name: 'Pomodoro Session Planner', url: 'pomodoro-session-planner.html', icon: '🍅' },
+      { name: 'Daily Schedule Builder', url: 'daily-schedule-builder.html', icon: '📅' },
+      { name: 'Time Audit Tracker', url: 'time-audit-tracker.html', icon: '⏱️' },
+      { name: 'Productivity Score Calculator', url: 'productivity-score-calculator.html', icon: '💯' },
+      { name: 'Overwhelm Reset Tool', url: 'overwhelm-reset-tool.html', icon: '😌' },
+      { name: 'Next Action Identifier', url: 'next-action-identifier.html', icon: '➡️' },
+      { name: 'Context Switcher Helper', url: 'context-switcher-helper.html', icon: '🔀' },
+      { name: 'Single Tasking Timer', url: 'single-tasking-timer.html', icon: '⏳' },
+      { name: 'Weekly Capacity Planner', url: 'weekly-capacity-planner.html', icon: '📊' },
+      { name: 'Energy Management Tracker', url: 'energy-management-tracker.html', icon: '🔋' },
+      { name: 'Mindful Break Timer', url: 'mindful-break-timer.html', icon: '🧘' },
+      { name: 'Daily Shutdown Ritual', url: 'daily-shutdown-ritual.html', icon: '🔒' },
+      { name: 'Morning Pages Prompt Generator', url: 'morning-pages-prompt-generator.html', icon: '📝' },
+      { name: 'Inbox Zero Tracker', url: 'inbox-zero-tracker.html', icon: '📬' },
+      { name: 'Digital Declutter Checklist', url: 'digital-declutter-checklist.html', icon: '🗑️' },
+      { name: 'Focus Environment Checklist', url: 'focus-environment-checklist.html', icon: '✅' },
+      { name: 'Deep Work Score Calculator', url: 'deep-work-score-calculator.html', icon: '🧠' },
+      { name: 'Accountability Check In Tool', url: 'accountability-check-in-tool.html', icon: '🤝' },
+      { name: 'Progress vs Goals Tracker', url: 'progress-vs-goals-tracker.html', icon: '📈' },
+      { name: 'Work Life Balance Checker', url: 'work-life-balance-checker.html', icon: '⚖️' },
+      { name: 'Boundary Setting Planner', url: 'boundary-setting-planner.html', icon: '🛡️' },
+      { name: 'No List Tracker', url: 'no-list-tracker.html', icon: '🚫' },
+      { name: 'Daily Non-Negotiables Planner', url: 'daily-non-negotiables-planner.html', icon: '💪' },
+    ]
   }
 ];
 
-// Coming soon categories — the other 18
+// Coming soon categories — the other 17
 const COMING_SOON = [
-  { id: 'Productivity', icon: '⚡', count: 50 },
   { id: 'Content Creation', icon: '✏️', count: 50 },
   { id: 'AI Tools & Prompts', icon: '🤖', count: 50 },
   { id: 'Social Media Growth', icon: '📱', count: 50 },
@@ -631,19 +688,19 @@ function renderContent() {
 
     html += `
       <div class="more-coming">
-        <h3>900 more apps <span>coming soon</span></h3>
-        <p>You already have 100 live apps to sell today. New categories unlock automatically — no extra cost, no extra steps. Every app added goes straight into your vault.</p>
+        <h3>850 more apps <span>coming soon</span></h3>
+        <p>You already have 150 live apps to sell today. New categories unlock automatically — no extra cost, no extra steps. Every app added goes straight into your vault.</p>
         <div class="progress-wrap">
-          <div class="progress-label"><span>Progress</span><span style="color:var(--gold)">100 / 1000 live</span></div>
+          <div class="progress-label"><span>Progress</span><span style="color:var(--gold)">150 / 1000 live</span></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
       </div>`;
 
     content.innerHTML = html;
-    document.getElementById('visibleCount').textContent = '100';
+    document.getElementById('visibleCount').textContent = '150';
     setTimeout(() => {
       const fill = document.getElementById('progressFill');
-      if (fill) fill.style.width = '10%';
+      if (fill) fill.style.width = '15%';
     }, 100);
     return;
   }
@@ -690,10 +747,10 @@ function renderContent() {
   if (currentCat === 'all' && !search) {
     html += `
       <div class="more-coming">
-        <h3>900 more apps <span>coming soon</span></h3>
-        <p>New categories unlock automatically in your vault as they are built — no extra cost, no extra steps. You already have 100 live apps to start selling today.</p>
+        <h3>850 more apps <span>coming soon</span></h3>
+        <p>New categories unlock automatically in your vault as they are built — no extra cost, no extra steps. You already have 150 live apps to start selling today.</p>
         <div class="progress-wrap">
-          <div class="progress-label"><span>Vault progress</span><span style="color:var(--gold)">100 / 1000 live</span></div>
+          <div class="progress-label"><span>Vault progress</span><span style="color:var(--gold)">150 / 1000 live</span></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
       </div>`;
@@ -709,11 +766,11 @@ function renderContent() {
   }
 
   content.innerHTML = html;
-  document.getElementById('visibleCount').textContent = totalVisible || 100;
+  document.getElementById('visibleCount').textContent = totalVisible || 150;
 
   setTimeout(() => {
     const fill = document.getElementById('progressFill');
-    if (fill) fill.style.width = '10%';
+    if (fill) fill.style.width = '15%';
   }, 100);
 }
 
