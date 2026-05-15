@@ -411,7 +411,7 @@
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="Search 1000 apps..." oninput="filterApps()" autocomplete="off">
   </div>
-  <div class="topbar-count"><span id="visibleCount">150</span> apps available</div>
+  <div class="topbar-count"><span id="visibleCount">200</span> apps available</div>
 </div>
 
 <!-- HERO -->
@@ -443,6 +443,7 @@
     <div class="pill" onclick="filterCat('Business & Entrepreneurship', this)">💼 Business</div>
     <div class="pill" onclick="filterCat('Digital Products & Passive Income', this)">📦 Digital Products</div>
     <div class="pill" onclick="filterCat('Productivity', this)">⚡ Productivity</div>
+    <div class="pill" onclick="filterCat('Content Creation', this)">✏️ Content Creation</div>
     <div class="pill" onclick="filterCat('coming', this)">🔜 Coming Soon</div>
   </div>
 </div>
@@ -632,12 +633,68 @@ const CATEGORIES = [
       { name: 'No List Tracker', url: 'no-list-tracker.html', icon: '🚫' },
       { name: 'Daily Non-Negotiables Planner', url: 'daily-non-negotiables-planner.html', icon: '💪' },
     ]
+  },
+  {
+    id: 'Content Creation',
+    icon: '✏️',
+    desc: '50 tools for creators, writers, and digital sellers to plan, write, and scale their content',
+    apps: [
+      { name: 'Content Pillar Generator', url: 'content-pillar-generator.html', icon: '🏛️' },
+      { name: '30 Day Post Idea Creator', url: '30-day-post-idea-creator.html', icon: '📅' },
+      { name: 'Caption Formula Tool', url: 'caption-formula-tool.html', icon: '✍️' },
+      { name: 'Hook Generator', url: 'hook-generator.html', icon: '🪝' },
+      { name: 'Carousel Slide Planner', url: 'carousel-slide-planner.html', icon: '🎠' },
+      { name: 'Threads Post Builder', url: 'threads-post-builder.html', icon: '🧵' },
+      { name: 'Instagram Bio Optimiser', url: 'instagram-bio-optimiser.html', icon: '📸' },
+      { name: 'Content Calendar Builder', url: 'content-calendar-builder.html', icon: '🗓️' },
+      { name: 'Post Repurposing Planner', url: 'post-repurposing-planner.html', icon: '♻️' },
+      { name: 'Hashtag Strategy Tool', url: 'hashtag-strategy-tool.html', icon: '#️⃣' },
+      { name: 'Content Batch Planner', url: 'content-batch-planner.html', icon: '📦' },
+      { name: 'Viral Post Analyser', url: 'viral-post-analyser.html', icon: '🔥' },
+      { name: 'Story Script Generator', url: 'story-script-generator.html', icon: '📖' },
+      { name: 'Reel Hook Creator', url: 'reel-hook-creator.html', icon: '🎬' },
+      { name: 'YouTube Title Generator', url: 'youtube-title-generator.html', icon: '🎥' },
+      { name: 'Blog Post Outline Builder', url: 'blog-post-outline-builder.html', icon: '✏️' },
+      { name: 'Newsletter Subject Line Tester', url: 'newsletter-subject-line-tester.html', icon: '📧' },
+      { name: 'Email Body Template Tool', url: 'email-body-template-tool.html', icon: '💌' },
+      { name: 'CTA Generator', url: 'cta-generator.html', icon: '👉' },
+      { name: 'Content Audit Tool', url: 'content-audit-tool.html', icon: '🔍' },
+      { name: 'Engagement Rate Calculator', url: 'engagement-rate-calculator.html', icon: '💯' },
+      { name: 'Best Time To Post Tool', url: 'best-time-to-post-tool.html', icon: '⏰' },
+      { name: 'Content Theme Generator', url: 'content-theme-generator.html', icon: '🎨' },
+      { name: 'Brand Voice Checker', url: 'brand-voice-checker.html', icon: '🗣️' },
+      { name: 'Storytelling Framework Tool', url: 'storytelling-framework-tool.html', icon: '📚' },
+      { name: 'Educational Post Planner', url: 'educational-post-planner.html', icon: '🎓' },
+      { name: 'Behind The Scenes Post Ideas', url: 'behind-the-scenes-post-ideas.html', icon: '🎭' },
+      { name: 'Personal Story Prompt Generator', url: 'personal-story-prompt-generator.html', icon: '💭' },
+      { name: 'Controversial Opinion Post Builder', url: 'controversial-opinion-post-builder.html', icon: '🌶️' },
+      { name: 'Community Question Generator', url: 'community-question-generator.html', icon: '❓' },
+      { name: 'Poll Idea Creator', url: 'poll-idea-creator.html', icon: '📊' },
+      { name: 'Giveaway Planning Tool', url: 'giveaway-planning-tool.html', icon: '🎁' },
+      { name: 'Collaboration Pitch Builder', url: 'collaboration-pitch-builder.html', icon: '🤝' },
+      { name: 'Guest Post Planner', url: 'guest-post-planner.html', icon: '✉️' },
+      { name: 'Podcast Episode Outline', url: 'podcast-episode-outline.html', icon: '🎙️' },
+      { name: 'Live Stream Script Builder', url: 'live-stream-script-builder.html', icon: '📺' },
+      { name: 'Content Series Planner', url: 'content-series-planner.html', icon: '📑' },
+      { name: 'Seasonal Content Calendar', url: 'seasonal-content-calendar.html', icon: '🍂' },
+      { name: 'Product Launch Content Plan', url: 'product-launch-content-plan.html', icon: '🚀' },
+      { name: 'Evergreen Content Identifier', url: 'evergreen-content-identifier.html', icon: '🌲' },
+      { name: 'Content Performance Tracker', url: 'content-performance-tracker.html', icon: '📈' },
+      { name: 'Follower Growth Calculator', url: 'follower-growth-calculator.html', icon: '👥' },
+      { name: 'Profile Optimisation Checklist', url: 'profile-optimisation-checklist.html', icon: '✅' },
+      { name: 'DM Script Generator', url: 'dm-script-generator.html', icon: '📩' },
+      { name: 'Comment Response Templates', url: 'comment-response-templates.html', icon: '💬' },
+      { name: 'Social Proof Post Builder', url: 'social-proof-post-builder.html', icon: '⭐' },
+      { name: 'Milestone Celebration Post Tool', url: 'milestone-celebration-post-tool.html', icon: '🏆' },
+      { name: 'Content Recycling Planner', url: 'content-recycling-planner.html', icon: '🔄' },
+      { name: 'Multi Platform Content Adaptor', url: 'multi-platform-content-adaptor.html', icon: '🔀' },
+      { name: 'Content ROI Calculator', url: 'content-roi-calculator.html', icon: '💵' },
+    ]
   }
 ];
 
-// Coming soon categories — the other 17
+// Coming soon categories — the other 16
 const COMING_SOON = [
-  { id: 'Content Creation', icon: '✏️', count: 50 },
   { id: 'AI Tools & Prompts', icon: '🤖', count: 50 },
   { id: 'Social Media Growth', icon: '📱', count: 50 },
   { id: 'Email Marketing', icon: '📧', count: 50 },
@@ -671,7 +728,7 @@ function renderContent() {
     html += `
       <div style="margin-bottom:20px">
         <div style="font-size:13px;color:var(--muted);margin-bottom:16px;font-weight:300;">
-          18 more categories dropping as apps are built. Every new category unlocks automatically in your vault.
+          16 more categories dropping as apps are built. Every new category unlocks automatically in your vault.
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
           ${COMING_SOON.map(cat => `
@@ -688,19 +745,19 @@ function renderContent() {
 
     html += `
       <div class="more-coming">
-        <h3>850 more apps <span>coming soon</span></h3>
-        <p>You already have 150 live apps to sell today. New categories unlock automatically — no extra cost, no extra steps. Every app added goes straight into your vault.</p>
+        <h3>800 more apps <span>coming soon</span></h3>
+        <p>You already have 200 live apps to sell today. New categories unlock automatically — no extra cost, no extra steps. Every app added goes straight into your vault.</p>
         <div class="progress-wrap">
-          <div class="progress-label"><span>Progress</span><span style="color:var(--gold)">150 / 1000 live</span></div>
+          <div class="progress-label"><span>Progress</span><span style="color:var(--gold)">200 / 1000 live</span></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
       </div>`;
 
     content.innerHTML = html;
-    document.getElementById('visibleCount').textContent = '150';
+    document.getElementById('visibleCount').textContent = '200';
     setTimeout(() => {
       const fill = document.getElementById('progressFill');
-      if (fill) fill.style.width = '15%';
+      if (fill) fill.style.width = '20%';
     }, 100);
     return;
   }
@@ -747,10 +804,10 @@ function renderContent() {
   if (currentCat === 'all' && !search) {
     html += `
       <div class="more-coming">
-        <h3>850 more apps <span>coming soon</span></h3>
-        <p>New categories unlock automatically in your vault as they are built — no extra cost, no extra steps. You already have 150 live apps to start selling today.</p>
+        <h3>800 more apps <span>coming soon</span></h3>
+        <p>New categories unlock automatically in your vault as they are built — no extra cost, no extra steps. You already have 200 live apps to start selling today.</p>
         <div class="progress-wrap">
-          <div class="progress-label"><span>Vault progress</span><span style="color:var(--gold)">150 / 1000 live</span></div>
+          <div class="progress-label"><span>Vault progress</span><span style="color:var(--gold)">200 / 1000 live</span></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
       </div>`;
@@ -766,11 +823,11 @@ function renderContent() {
   }
 
   content.innerHTML = html;
-  document.getElementById('visibleCount').textContent = totalVisible || 150;
+  document.getElementById('visibleCount').textContent = totalVisible || 200;
 
   setTimeout(() => {
     const fill = document.getElementById('progressFill');
-    if (fill) fill.style.width = '15%';
+    if (fill) fill.style.width = '20%';
   }, 100);
 }
 
