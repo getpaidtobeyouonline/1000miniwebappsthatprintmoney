@@ -411,7 +411,7 @@
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="Search 1000 apps..." oninput="filterApps()" autocomplete="off">
   </div>
-  <div class="topbar-count"><span id="visibleCount">200</span> apps available</div>
+  <div class="topbar-count"><span id="visibleCount">250</span> apps available</div>
 </div>
 
 <!-- HERO -->
@@ -444,6 +444,7 @@
     <div class="pill" onclick="filterCat('Digital Products & Passive Income', this)">📦 Digital Products</div>
     <div class="pill" onclick="filterCat('Productivity', this)">⚡ Productivity</div>
     <div class="pill" onclick="filterCat('Content Creation', this)">✏️ Content Creation</div>
+    <div class="pill" onclick="filterCat('AI Tools & Prompts', this)">🤖 AI Tools</div>
     <div class="pill" onclick="filterCat('coming', this)">🔜 Coming Soon</div>
   </div>
 </div>
@@ -690,12 +691,68 @@ const CATEGORIES = [
       { name: 'Multi Platform Content Adaptor', url: 'multi-platform-content-adaptor.html', icon: '🔀' },
       { name: 'Content ROI Calculator', url: 'content-roi-calculator.html', icon: '💵' },
     ]
+  },
+  {
+    id: 'AI Tools & Prompts',
+    icon: '🤖',
+    desc: '50 tools to build, test, sell and profit with AI prompts and Claude workflows',
+    apps: [
+      { name: 'Claude Prompt Builder', url: 'claude-prompt-builder.html', icon: '🛠️' },
+      { name: 'ChatGPT vs Claude Comparator', url: 'chatgpt-vs-claude-comparator.html', icon: '⚖️' },
+      { name: 'AI Prompt Library Organiser', url: 'ai-prompt-library-organiser.html', icon: '📚' },
+      { name: 'Prompt Refinement Tool', url: 'prompt-refinement-tool.html', icon: '✨' },
+      { name: 'AI Output Checker', url: 'ai-output-checker.html', icon: '🔍' },
+      { name: 'Advanced Prompt Pack Creator', url: 'advanced-prompt-pack-creator.html', icon: '📦' },
+      { name: 'AI Workflow Builder', url: 'ai-workflow-builder.html', icon: '🔗' },
+      { name: 'Claude Project Planner', url: 'claude-project-planner.html', icon: '🗂️' },
+      { name: 'AI Tool Selector', url: 'ai-tool-selector.html', icon: '🎯' },
+      { name: 'Prompt Testing Dashboard', url: 'prompt-testing-dashboard.html', icon: '🧪' },
+      { name: 'AI Income Method Selector', url: 'ai-income-method-selector.html', icon: '💸' },
+      { name: 'AI Business Idea Generator', url: 'ai-business-idea-generator.html', icon: '💡' },
+      { name: 'Prompt Monetisation Planner', url: 'prompt-monetisation-planner.html', icon: '💰' },
+      { name: 'AI Skill Audit Tool', url: 'ai-skill-audit-tool.html', icon: '📋' },
+      { name: 'Claude Conversation Starter', url: 'claude-conversation-starter.html', icon: '💬' },
+      { name: 'AI Product Builder Brief', url: 'ai-product-builder-brief.html', icon: '📝' },
+      { name: 'Prompt Engineering Checklist', url: 'prompt-engineering-checklist.html', icon: '✅' },
+      { name: 'AI Tool Stack Planner', url: 'ai-tool-stack-planner.html', icon: '🧱' },
+      { name: 'AI Content Calendar', url: 'ai-content-calendar.html', icon: '🗓️' },
+      { name: 'Prompt Swipe File Builder', url: 'prompt-swipe-file-builder.html', icon: '📁' },
+      { name: 'AI Writing Style Guide', url: 'ai-writing-style-guide.html', icon: '🖊️' },
+      { name: 'Claude App Brief Generator', url: 'claude-app-brief-generator.html', icon: '📄' },
+      { name: 'AI Automation Planner', url: 'ai-automation-planner.html', icon: '⚙️' },
+      { name: 'Prompt Results Tracker', url: 'prompt-results-tracker.html', icon: '📊' },
+      { name: 'AI Side Hustle Calculator', url: 'ai-side-hustle-calculator.html', icon: '🧮' },
+      { name: 'Claude Output Formatter', url: 'claude-output-formatter.html', icon: '🧹' },
+      { name: 'AI Research Assistant Brief', url: 'ai-research-assistant-brief.html', icon: '🔬' },
+      { name: 'Prompt Marketplace Planner', url: 'prompt-marketplace-planner.html', icon: '🏪' },
+      { name: 'AI Niche Finder', url: 'ai-niche-finder.html', icon: '🧭' },
+      { name: 'Claude Mini App Brief Tool', url: 'claude-mini-app-brief-tool.html', icon: '⚡' },
+      { name: 'AI Income Diversifier', url: 'ai-income-diversifier.html', icon: '🌐' },
+      { name: 'Prompt Pack Pricing Calculator', url: 'prompt-pack-pricing-calculator.html', icon: '💲' },
+      { name: 'AI Tool ROI Calculator', url: 'ai-tool-roi-calculator.html', icon: '📈' },
+      { name: 'Claude Prompt Tester', url: 'claude-prompt-tester.html', icon: '🔧' },
+      { name: 'AI Business Audit Tool', url: 'ai-business-audit-tool.html', icon: '🩺' },
+      { name: 'Prompt Library Builder', url: 'prompt-library-builder.html', icon: '🗄️' },
+      { name: 'AI Content Repurposer', url: 'ai-content-repurposer.html', icon: '♻️' },
+      { name: 'Claude Course Outline Builder', url: 'claude-course-outline-builder.html', icon: '🎓' },
+      { name: 'AI Launch Planner', url: 'ai-launch-planner.html', icon: '🚀' },
+      { name: 'Prompt Improvement Suggester', url: 'prompt-improvement-suggester.html', icon: '🔼' },
+      { name: 'AI Skill Monetisation Map', url: 'ai-skill-monetisation-map.html', icon: '🗺️' },
+      { name: 'Claude Workflow Designer', url: 'claude-workflow-designer.html', icon: '🔀' },
+      { name: 'AI Product Validation Tool', url: 'ai-product-validation-tool.html', icon: '✔️' },
+      { name: 'Prompt Bank Organiser', url: 'prompt-bank-organiser.html', icon: '🏦' },
+      { name: 'AI Revenue Tracker', url: 'ai-revenue-tracker.html', icon: '💹' },
+      { name: 'Claude Brief Optimiser', url: 'claude-brief-optimiser.html', icon: '✏️' },
+      { name: 'AI Beginner Roadmap', url: 'ai-beginner-roadmap.html', icon: '🧗' },
+      { name: 'Prompt Success Rate Tracker', url: 'prompt-success-rate-tracker.html', icon: '🎯' },
+      { name: 'AI Tool Comparison Matrix', url: 'ai-tool-comparison-matrix.html', icon: '🆚' },
+      { name: 'Claude Business Blueprint', url: 'claude-business-blueprint.html', icon: '📐' },
+    ]
   }
 ];
 
 // Coming soon categories — the other 16
 const COMING_SOON = [
-  { id: 'AI Tools & Prompts', icon: '🤖', count: 50 },
   { id: 'Social Media Growth', icon: '📱', count: 50 },
   { id: 'Email Marketing', icon: '📧', count: 50 },
   { id: 'Mindset & Personal Development', icon: '🧠', count: 50 },
@@ -728,7 +785,7 @@ function renderContent() {
     html += `
       <div style="margin-bottom:20px">
         <div style="font-size:13px;color:var(--muted);margin-bottom:16px;font-weight:300;">
-          16 more categories dropping as apps are built. Every new category unlocks automatically in your vault.
+          15 more categories dropping as apps are built. Every new category unlocks automatically in your vault.
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
           ${COMING_SOON.map(cat => `
@@ -745,19 +802,19 @@ function renderContent() {
 
     html += `
       <div class="more-coming">
-        <h3>800 more apps <span>coming soon</span></h3>
-        <p>You already have 200 live apps to sell today. New categories unlock automatically — no extra cost, no extra steps. Every app added goes straight into your vault.</p>
+        <h3>750 more apps <span>coming soon</span></h3>
+        <p>You already have 250 live apps to sell today. New categories unlock automatically — no extra cost, no extra steps. Every app added goes straight into your vault.</p>
         <div class="progress-wrap">
-          <div class="progress-label"><span>Progress</span><span style="color:var(--gold)">200 / 1000 live</span></div>
+          <div class="progress-label"><span>Progress</span><span style="color:var(--gold)">250 / 1000 live</span></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
       </div>`;
 
     content.innerHTML = html;
-    document.getElementById('visibleCount').textContent = '200';
+    document.getElementById('visibleCount').textContent = '250';
     setTimeout(() => {
       const fill = document.getElementById('progressFill');
-      if (fill) fill.style.width = '20%';
+      if (fill) fill.style.width = '25%';
     }, 100);
     return;
   }
@@ -804,10 +861,10 @@ function renderContent() {
   if (currentCat === 'all' && !search) {
     html += `
       <div class="more-coming">
-        <h3>800 more apps <span>coming soon</span></h3>
-        <p>New categories unlock automatically in your vault as they are built — no extra cost, no extra steps. You already have 200 live apps to start selling today.</p>
+        <h3>750 more apps <span>coming soon</span></h3>
+        <p>New categories unlock automatically in your vault as they are built — no extra cost, no extra steps. You already have 250 live apps to start selling today.</p>
         <div class="progress-wrap">
-          <div class="progress-label"><span>Vault progress</span><span style="color:var(--gold)">200 / 1000 live</span></div>
+          <div class="progress-label"><span>Vault progress</span><span style="color:var(--gold)">250 / 1000 live</span></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
       </div>`;
@@ -823,11 +880,11 @@ function renderContent() {
   }
 
   content.innerHTML = html;
-  document.getElementById('visibleCount').textContent = totalVisible || 200;
+  document.getElementById('visibleCount').textContent = totalVisible || 250;
 
   setTimeout(() => {
     const fill = document.getElementById('progressFill');
-    if (fill) fill.style.width = '20%';
+    if (fill) fill.style.width = '25%';
   }, 100);
 }
 
